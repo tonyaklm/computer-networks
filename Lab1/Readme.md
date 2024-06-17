@@ -219,9 +219,10 @@
         show spanning-tree vlan 20
         ```
         ![Switch-vlan-20](img/switch_spanning_tree_vlan_20.png)
+       
         Для обоих vlan'ов Switch является корнем ( This bridge is the root)
 
-    6. Router  
+    7. Router  
         Сначала включается интерфейс между коммутатором и маршрутизатором (e0/0)
         ```
         enable
@@ -263,6 +264,7 @@
         ping 10.0.10.1 -c 1
         ``` 
         ![VPC1-ping](img/vpc1_ping_1.png)
+       
         Все дошло
     1. VPC2  
         Отправка пинга со второго клиента первому (VPC2 -> VPC1)
@@ -276,6 +278,7 @@
         ping 10.0.20.1 -c 1
         ``` 
         ![VPC2-ping](img/vpc2_ping_1.png)
+       
         Все дошло
 
 4. Проверка отказоустойчивости 
